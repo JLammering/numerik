@@ -1,40 +1,41 @@
-
+%1.1 a)
+z = 'Aufgabe a'
 
 format long
 x=-5.5
 n=3:3:30
 
-function y = fakultaet(a)
-%Berechnet Fakultät der Zahl a
-
-fak=1;
-
-if a == 0
-  y = 1;
-else
-  for i=1:a
-    fak=fak*i;
-  end
+for i=1:10%diese Schleife geht durch das Array der Grenzen 
+ s=0;
+ a=n(i)
+ for k=0:a%diese Schleife simuliert die Summe
+  s=s+(x^k)/(factorial(k));
+ end
+ s %das ergebnis der Summe wird ausgegeben
 end
 
-y=fak;
-endfunction
+%b)
+b = 'Aufgabe b'
+x = 5.5;
 
-function q = rekfak(a)
-%berechnet Fakultät rekursiv
-
-if a == 0
-  q =1;
-else
-  q = a*rekfak(a-1)
-end
-endfunction
-
-for i=1:10%geht 
+for i=1:10
  s=0;
  a=n(i)
  for k=0:a
-  s=s+(x^k)/(fakultaet(k));
+  s=s+(x^k)/(factorial(k));
  end
- s
+ 1/s 
+end
+
+%c)
+z = 'Aufgabe c'
+x = -0.5
+
+for i=1:10
+ s=0;
+ a=n(i)
+ for k=0:a
+  s=s+(x^k)/(factorial(k));
+ end
+ s^11
 end
