@@ -21,10 +21,10 @@ x = 5.5;
 for i=1:10
  s=0;
  a=n(i)
- for k=0:a
+ for k=0:a%e^5.5 wird berechnet
   s=s+(x^k)/(factorial(k));
  end
- 1/s 
+ 1/s %1/(e^5.5) wird ausgegeben
 end
 
 %c)
@@ -34,8 +34,11 @@ x = -0.5
 for i=1:10
  s=0;
  a=n(i)
- for k=0:a
+ for k=0:a%e^-0.5 wird berechnet
   s=s+(x^k)/(factorial(k));
  end
- s^11
+ s^11%(e^-0.5)^11 wird ausgegeben
 end
+
+%b konvergiert schneller gegen den exakten Wert
+%c konvergiert sogar noch schneller

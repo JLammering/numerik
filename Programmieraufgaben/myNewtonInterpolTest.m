@@ -1,0 +1,2 @@
+%myNewtonInterpoltest
+n = 
