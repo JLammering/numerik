@@ -6,5 +6,5 @@ figure
 
 plot(x,((((((x-7).*x+21).*x-35).*x+35).*x-21).*x+7).*x-1);
 
-%figure 2 ist ungenauer und fluktuiert. Dies liegt daran, dass mit den ungenauen single-Werten viele Multiplikationen
-%ausgeführt werden und nicht nur eine Potenz. Hier pflanzen sich die Rundungsfehler fort.
+%figure 2 ist ungenauer und fluktuiert. Dies liegt daran, dass bei der Horner-Form mit den ungenauen single-Werten mehr Rechenoperationen ausgeführt werden
+% als bei der Schreibweise mit Potenz. Dadurch wird öfter gerundet und so pflanzen sich die Rundungsfehler fort.

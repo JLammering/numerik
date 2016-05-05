@@ -5,7 +5,7 @@ format long
 x=-5.5
 n=3:3:30
 
-for i=1:10%diese Schleife geht durch das Array der Grenzen 
+for i=1:10%diese Schleife geht durch das Array der Grenzen
  s=0;
  a=n(i)
  for k=0:a%diese Schleife simuliert die Summe
@@ -42,3 +42,4 @@ end
 
 %b konvergiert schneller gegen den exakten Wert
 %c konvergiert sogar noch schneller
+%dies liegt daran, dass 5.5 und 0.5 in Binärschreibweise besser darstellbar sind als -5.5
