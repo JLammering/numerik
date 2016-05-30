@@ -1,7 +1,7 @@
-f = @(x) x.^(-2);%function_handle 
+f = @(x) x.^(-2);%function_handle
 
 w =[0.5 0.5];%Gewichte
-p= [0.5 1];%Punkte
+p = [0.5 1];%Punkte
 I_T = myQuadratur1D(f, w, p);
 a = 'Trapezregel'
 I_T
